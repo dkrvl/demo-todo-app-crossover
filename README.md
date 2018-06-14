@@ -1,2 +1,2 @@
-# xo_todo
-API for Crossover Todo Application
+# CSOVER 
+API for CSOVER Todo Application

@@ -1,0 +1,167 @@
+body {
+	padding-top: 50px;
+	background: #f4f4f4;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+	;
+}
+
+.main-container {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+
+/*****************************
+*******LOGIN
+******************************/
+
+.loginController {}
+
+.form-bg {
+	padding: 40px;
+	background: #f1f1f1;
+}
+
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control:focus {
+	border-color: #ddd !important;
+	background: #ffffff !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+
+/*****************************
+*******Todo List
+******************************/
+
+.todo-wrapper {
+	width: 100%;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	min-height: 500px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.todo-list {
+	min-height: 500px;
+}
+
+.todo-list-item {
+	border: 1px solid #333;
+	border-radius: 4px;
+	margin: 5px;
+	padding: 10px 20px;
+	background: #f4f4f4;
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	/* curssor  fallback  */
+	cursor: pointer;
+}
+
+.todo-list-item>div:first-child {
+	display: block;
+	text-align: left;
+	position: relative;
+	margin: 0 15% 0 0;
+}
+
+.todo-title {
+	display: block;
+	font-size: 20px;
+	color: #999;
+	text-shadow: 1px 1px 0px #333;
+}
+
+.todo-desc {
+	display: block;
+	color: #3c3c3c;
+	font-size: 16px;
+	padding: 15px 0;
+}
+
+.todo-update {
+	color: red;
+}
+
+.todo-remove {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+
+.todo-remove:hover {
+	background: #333;
+	color: #fff;
+}
+
+.todo-list-bin {
+	transition: all 0.5s linear;
+}
+
+.todo-list-bin.over {
+	background: #f4f4f4;
+	box-shadow: inset 0px 0px 35px 249px #ccc, 0px 0px 10px 1px #000;
+	box-shadow: ;
+}
+
+.drag {
+	cursor: move;
+	/* fallback if grab cursor is unsupported */
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.status {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 5px solid #fff;
+	border-radius: 30px;
+	text-indent: -9000px;
+	color: #fff;
+}
+
+.status.completed {
+	background-color: #5cb85c;
+	box-shadow: 0 0px 3px 4px #4cae4c;
+}
+
+.status.notCompleted {
+	background-color: #d9534f;
+	box-shadow: 0 0px 3px 4px #d43f3a;
+}
+
+.edit-form {}
+
+.button-box {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.addtodoToList {
+	padding: 15px;
+	margin-bottom: 30px;
+}
